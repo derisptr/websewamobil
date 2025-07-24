@@ -151,7 +151,20 @@
         flex-direction: column;
         padding: 15px 20px;
         text-align: center;
-      }
+    }
+    .footer {
+      background-color: #fff;
+      padding: 15px 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #333;
+      border-top: 1px solid #ddd;
+      box-sizing: border-box;
+    }
+    .footer strong {
+      font-weight: bold;
+      color: #6c2bd9; /* warna ungu agar matching */
+    }
       nav {
         margin-top: 10px;
       }
