@@ -34,8 +34,8 @@
       transition: all 0.3s ease;
     }
     nav a:hover {
-      color: #fff;
-      text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
+      color: #333;
+      text-shadow: 0 0 10px #1F1F1F, 0 0 20px #1F1F1F;
     }
     nav a::after {
       content: "";
@@ -44,7 +44,7 @@
       bottom: -4px;
       width: 0%;
       height: 2px;
-      background-color: #FFD700;
+      background-color: #1F1F1F;
       transition: width 0.3s ease;
     }
     nav a:hover::after {
