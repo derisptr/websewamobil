@@ -1,189 +1,188 @@
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      color: #333;
-      scroll-behavior: smooth;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 50px;
-      background: #fff;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      flex-wrap: wrap;
-    }
-    .logo img {
-      height: 50px;
-    }
-    nav {
-      flex-grow: 1;
-      text-align: center;
-    }    
-   nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-      position: relative; 
-      display: inline-block;
-      transition: all 0.3s ease;
-    } 
-    nav a:hover {
-      color: #333;
-      text-shadow: none;
-    }
-    nav a::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -4px;
-      width: 0%;
-      height: 2px;
-      background-color: #1F1F1F;
-      transition: width 0.3s ease;
-    }
-    nav a:hover::after {
-      width: 100%;
-    }
-    .cta-button {
-      padding: 10px 20px;
-      border-radius: 50px;
-      border: 2px solid #6c2bd9;
-      background: white;
-      color: #6c2bd9;
-      font-weight: bold;
-      cursor: pointer;
-      text-decoration: none;
-      transition: all 0.3s ease;
-    }
-    .cta-button:hover {
-      background: #6c2bd9;
-      color: white;
-    }
-    .hero {
-      background-image: url('assets/images/hero-mobil.jpg');
-      background-size: cover;
-      background-position: center;
-      padding: 100px 20px;
-      text-align: left;
-      color: white;
-      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
-    }
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
-    .hero p {
-      font-size: 20px;
-      margin-bottom: 30px;
-    }
-    .hero a.btn {
-      padding: 15px 30px;
-      font-size: 16px;
-      background: #6c2bd9;
-      color: white;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .wa-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      width: 50px;
-      height: 50px;
-      z-index: 9999;
-      border-radius: 50%;
-      background-color: transparent;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      animation: bounce 2s infinite;
-    }
-    .wa-float img {
-      width: 32px;
-      height: 32px;
-    }
-    .layanan-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 40px;
-      text-align: center;
-      margin-top: 40px;
-    }
-    .layanan-item {
-      padding: 20px;
-      border-radius: 10px;
-      transition: all 0.3s ease;
-    }
-    .layanan-item:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    }
-    .layanan-item img {
-      display: block;
-      margin: 0 auto 10px;
-      max-width: 100px;
-      height: auto;
-    }
-    .layanan-item h3 {
-      color: purple;
-      margin-bottom: 10px;
-    }
-    .kendaraan-item:hover {
-      transform: scale(1.03);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-      transition: all 0.3s ease;
-    }
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-5px); }
-    }
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        padding: 15px 20px;
-        text-align: center;
-    }
-    .footer {
-      background-color: #fff;
-      padding: 15px 20px;
-      text-align: center;
-      font-size: 14px;
-      color: #333;
-      border-top: 1px solid #ddd;
-      box-sizing: border-box;
-    }
-    .footer strong {
-      font-weight: bold;
-      color: #6c2bd9;
-    }
-    footer nav a {
-      margin: 0 12px;
-      color: #333;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    footer nav a:hover {
-      text-decoration: underline;
-    }
-      nav {
-        margin-top: 10px;
-      }
-      .hero h1 {
-        font-size: 32px;
-      }
-      .hero p {
-        font-size: 16px;
-      }
-      .cta-button {
-        margin-top: 10px;
-      }
-    }
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  scroll-behavior: smooth;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+.logo img {
+  height: 50px;
+}
+nav {
+  flex-grow: 1;
+  text-align: center;
+}
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  position: relative; 
+  display: inline-block;
+  transition: all 0.3s ease;
+} 
+nav a:hover {
+  color: #000;
+}
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #1F1F1F;
+  transition: width 0.3s ease;
+}
+nav a:hover::after {
+  width: 100%;
+}
+.cta-button {
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 2px solid #6c2bd9;
+  background: white;
+  color: #6c2bd9;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.cta-button:hover {
+  background: #6c2bd9;
+  color: white;
+}
+.hero {
+  background-image: url('assets/images/hero-mobil.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: left;
+  color: white;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.hero a.btn {
+  padding: 15px 30px;
+  font-size: 16px;
+  background: #6c2bd9;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.wa-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  z-index: 9999;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: bounce 2s infinite;
+}
+.wa-float img {
+  width: 32px;
+  height: 32px;
+}
+.layanan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  text-align: center;
+  margin-top: 40px;
+}
+.layanan-item {
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.layanan-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+.layanan-item img {
+  display: block;
+  margin: 0 auto 10px;
+  max-width: 100px;
+  height: auto;
+}
+.layanan-item h3 {
+  color: purple;
+  margin-bottom: 10px;
+}
+.kendaraan-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+.footer {
+  background-color: #fff;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  border-top: 1px solid #ddd;
+  box-sizing: border-box;
+}
+.footer strong {
+  font-weight: bold;
+  color: #6c2bd9;
+}
+footer nav a {
+  margin: 0 12px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+footer nav a:hover {
+  text-decoration: underline;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 15px 20px;
+    text-align: center;
+  }
+  nav {
+    margin-top: 10px;
+  }
+  .hero h1 {
+    font-size: 32px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
+  .cta-button {
+    margin-top: 10px;
+  }
+}
