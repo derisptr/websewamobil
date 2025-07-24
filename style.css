@@ -25,12 +25,30 @@
     nav {
       flex-grow: 1;
       text-align: center;
-    }
+    }    
     nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
+      padding: 10px 20px;
+      font-weight: bold;
+      position: relative;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+    nav a:hover {
+      color: #fff;
+      text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
+    }
+    nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0%;
+      height: 2px;
+      background-color: #FFD700;
+      transition: width 0.3s ease;
+    }
+    nav a:hover::after {
+      width: 100%;
     }
     .cta-button {
       padding: 10px 20px;
