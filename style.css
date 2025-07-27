@@ -142,6 +142,45 @@ nav a:hover::after {
   box-shadow: 0 6px 16px rgba(0,0,0,0.1);
   transition: all 0.3s ease;
 }
+.galeri-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.galeri-grid img {
+  width: 280px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.galeri-grid img:hover {
+  transform: scale(1.05);
+}
+.fitur-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+}
+.fitur-item {
+  flex: 1;
+  min-width: 150px;
+}
+.fitur-item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+.fitur-item img:hover {
+  transform: rotate(5deg) scale(1.1);
+}
+.fitur-item h3 {
+  color: #6c2bd9;
+  font-size: 16px;
+  margin: 0;
+}
 .footer {
   background-color: #fff;
   padding: 15px 20px;
