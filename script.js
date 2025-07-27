@@ -1,18 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const hubungiBtn = document.getElementById("hubungiBtn");
-  if (hubungiBtn) {
-    hubungiBtn.onclick = function (e) {
+  const btn = document.getElementById("btnHubungiSekarang");
+  if (btn) {
+    btn.addEventListener("click", function (e) {
       e.preventDefault();
-
-      const scriptURL = "https://script.google.com/macros/s/AKfycbyvBlzGHcKHcTfaxd96KtgDBvHyKpasFmNTT-33tTy2zQVQbh_90BTtcqio-t4SrqYiqQ/exe";
-      
       const pesan = "Halo, saya ingin bertanya tentang layanan sewa mobil.";
-
+      const scriptURL = "https://script.google.com/macros/s/AKfycbxaT8_SJ0-xg0xnXsleZ1S56z6Q9GlOKI1B0_sf1OMtzhJwS52up7T9BQndfFg4QYZajg/exec";
       const url = `${scriptURL}?pesan=${encodeURIComponent(pesan)}`;
       window.open(url, "_blank");
-    };
+    });
   }
 });
+
 
 
 window.onscroll = function() {
