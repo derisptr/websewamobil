@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     btn.addEventListener("click", function (e) {
       e.preventDefault();
       const pesan = "Halo, saya ingin bertanya tentang layanan sewa mobil.";
-      const scriptURL = "https://script.google.com/macros/s/AKfycbxaT8_SJ0-xg0xnXsleZ1S56z6Q9GlOKI1B0_sf1OMtzhJwS52up7T9BQndfFg4QYZajg/exec";
+      const scriptURL = "https://script.google.com/macros/s/AKfycbyvBlzGHcKHcTfaxd96KtgDBvHyKpasFmNTT-33tTy2zQVQbh_90BTtcqio-t4SrqYiqQ/exec";
       const url = `${scriptURL}?pesan=${encodeURIComponent(pesan)}`;
       window.open(url, "_blank");
     });
