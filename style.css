@@ -20,7 +20,8 @@ header {
   flex-wrap: wrap;
 }
 .logo img {
-  height: 70px;
+  max-height: 100px;
+  height: auto;
 }
 nav {
   flex-grow: 1;
