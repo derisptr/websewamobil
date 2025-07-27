@@ -151,6 +151,41 @@ nav a:hover::after {
 .galeri-grid img:hover {
   transform: scale(1.05);
 }
+.galeri-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 10px 0;
+}
+.galeri-container img {
+  width: 280px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.galeri-container img:hover {
+  transform: scale(1.05);
+}
+.galeri-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #6c2bd9;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 10;
+}
+.galeri-prev {
+  left: -10px;
+}
+.galeri-next {
+  right: -10px;
+}
 .footer {
   background-color: #fff;
   padding: 15px 20px;
@@ -182,7 +217,12 @@ footer nav a:hover {
     flex-direction: column;
     padding: 15px 20px;
     text-align: center;
+  } 
+@media (max-width: 768px) {
+  .galeri-btn {
+    display: none;
   }
+}
   nav {
     margin-top: 10px;
   }
