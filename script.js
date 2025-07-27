@@ -1,19 +1,3 @@
-const statusMap = {};
-    fetch("https://script.google.com/macros/s/AKfycbxtp1gBvsMW53gR5u0E-8zuR584_7XdRNPclFW87aVW0KGTF4rBPcPLloF2jQO6TaD1Tw/exec")
-      .then(res => res.json())
-      .then(data => {
-        data.forEach(mobil => {
-          const id = mobil.ID;
-          const status = mobil.Status;
-          const span = document.getElementById("status-" + id);
-          if (span) {
-            span.textContent = status;
-            span.style.color = status === "tersedia" ? "green" : "red";
-          }
-        });
-      })
-      .catch(err => console.error("Gagal mengambil data status mobil:", err));
-
 document.addEventListener("DOMContentLoaded", function () {
       const buttons = document.querySelectorAll(".wa-button");
       buttons.forEach(btn => {
