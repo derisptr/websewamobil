@@ -18,16 +18,13 @@ function sendToAppsScript() {
   const tanggal = document.getElementById("tanggal").value;
   const durasi = document.getElementById("durasi").value;
 
-  // GANTI dengan link Apps Script kamu
   const scriptURL = "https://script.google.com/macros/s/AKfycbxaT8_SJ0-xg0xnXsleZ1S56z6Q9GlOKI1B0_sf1OMtzhJwS52up7T9BQndfFg4QYZajg/exec";
 
-  // Buat URL lengkap dengan parameter
   const url = `${scriptURL}?nama=${encodeURIComponent(nama)}&tanggal=${tanggal}&durasi=${durasi}`;
 
-  // Buka link Apps Script (redirect ke wa.me di server)
   window.open(url, "_blank");
 
-  return false; // agar form tidak reload
+  return false;
 }
 
 window.onscroll = function() {
