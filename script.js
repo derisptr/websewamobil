@@ -18,11 +18,14 @@ window.onscroll = function() {
   const container = document.getElementById('galeriContainer');
  document.addEventListener("DOMContentLoaded", function () {
   const container = document.getElementById('galeriContainer');
-  if (container) {
-    document.querySelector('.galeri-prev').onclick = () => {
+  const prevBtn = document.querySelector('.galeri-prev');
+  const nextBtn = document.querySelector('.galeri-next');
+
+  if (container && prevBtn && nextBtn) {
+    prevBtn.onclick = () => {
       container.scrollBy({ left: -300, behavior: 'smooth' });
     };
-    document.querySelector('.galeri-next').onclick = () => {
+    nextBtn.onclick = () => {
       container.scrollBy({ left: 300, behavior: 'smooth' });
     };
   }
