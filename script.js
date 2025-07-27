@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const btn = document.getElementById("btnHubungiSekarang");
+  const btn = document.getElementById("btnHubungi");
   if (btn) {
     btn.addEventListener("click", function (e) {
       e.preventDefault();
