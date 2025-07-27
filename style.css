@@ -218,11 +218,6 @@ footer nav a:hover {
     padding: 15px 20px;
     text-align: center;
   } 
-@media (max-width: 768px) {
-  .galeri-btn {
-    display: none;
-  }
-}
   nav {
     margin-top: 10px;
   }
@@ -234,5 +229,8 @@ footer nav a:hover {
   }
   .cta-button {
     margin-top: 10px;
+  }
+  .galeri-btn {
+    display: none;
   }
 }
