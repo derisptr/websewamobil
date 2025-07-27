@@ -1,17 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const btn = document.getElementById("hubungiBtn");
-  if (btn) {
-    btn.addEventListener("click", function (e) {
-      e.preventDefault();
-      const pesan = "Halo, saya ingin bertanya tentang layanan sewa mobil.";
-      const scriptURL = "https://script.google.com/macros/s/AKfycbyvBlzGHcKHcTfaxd96KtgDBvHyKpasFmNTT-33tTy2zQVQbh_90BTtcqio-t4SrqYiqQ/exec";
-      const url = `${scriptURL}?pesan=${encodeURIComponent(pesan)}`;
-      window.open(url, "_blank");
+  const buttons = document.querySelectorAll(".wa-button");
+    buttons.forEach(btn => {
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        fetch("https://script.google.com/macros/s/AKfycbyvBlzGHcKHcTfaxd96KtgDBvHyKpasFmNTT-33tTy2zQVQbh_90BTtcqio-t4SrqYiqQ/exec") // ← API milikmu
+          .then(res => res.text())
+          .then(link => {
+            window.open(link, "_blank");
+          })
+          .catch(() => alert("Gagal membuka WhatsApp. Silakan coba lagi."));
+      });
     });
-  }
-});
-
-
+  });
 
 window.onscroll = function() {
       const btn = document.getElementById("toTopBtn");
