@@ -16,9 +16,15 @@ window.onscroll = function() {
     };
 
   const container = document.getElementById('galeriContainer');
-  document.querySelector('.galeri-prev').onclick = () => {
-    container.scrollBy({ left: -300, behavior: 'smooth' });
-  };
-  document.querySelector('.galeri-next').onclick = () => {
-    container.scrollBy({ left: 300, behavior: 'smooth' });
-  };
+ document.addEventListener("DOMContentLoaded", function () {
+  const container = document.getElementById('galeriContainer');
+  if (container) {
+    document.querySelector('.galeri-prev').onclick = () => {
+      container.scrollBy({ left: -300, behavior: 'smooth' });
+    };
+    document.querySelector('.galeri-next').onclick = () => {
+      container.scrollBy({ left: 300, behavior: 'smooth' });
+    };
+  }
+});
+
